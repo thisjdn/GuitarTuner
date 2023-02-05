@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,12 @@
 		D7A04F52298F491D00333098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A04F50298F491D00333098 /* Main.storyboard */; };
 		D7A04F54298F491F00333098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A04F53298F491F00333098 /* Assets.xcassets */; };
 		D7A04F57298F491F00333098 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7A04F55298F491F00333098 /* LaunchScreen.storyboard */; };
+		DADBF52DA04F60BBBE59A261 /* Pods_GuitarTuner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5A90BAC7A444AEA8DD6828 /* Pods_GuitarTuner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CD840BCE8E1AB318DB870CF /* Pods-GuitarTuner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTuner.release.xcconfig"; path = "Target Support Files/Pods-GuitarTuner/Pods-GuitarTuner.release.xcconfig"; sourceTree = "<group>"; };
+		490DD26F5470D470F7D34DFD /* Pods-GuitarTuner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuitarTuner.debug.xcconfig"; path = "Target Support Files/Pods-GuitarTuner/Pods-GuitarTuner.debug.xcconfig"; sourceTree = "<group>"; };
 		D7A04F47298F491D00333098 /* GuitarTuner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GuitarTuner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7A04F4A298F491D00333098 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7A04F4C298F491D00333098 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		D7A04F53298F491F00333098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7A04F56298F491F00333098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7A04F58298F491F00333098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB5A90BAC7A444AEA8DD6828 /* Pods_GuitarTuner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GuitarTuner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADBF52DA04F60BBBE59A261 /* Pods_GuitarTuner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11C208E3A333E6FB3E96EC86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				490DD26F5470D470F7D34DFD /* Pods-GuitarTuner.debug.xcconfig */,
+				1CD840BCE8E1AB318DB870CF /* Pods-GuitarTuner.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7326D1E820F934C8713656C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB5A90BAC7A444AEA8DD6828 /* Pods_GuitarTuner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D7A04F3E298F491D00333098 = {
 			isa = PBXGroup;
 			children = (
 				D7A04F49298F491D00333098 /* GuitarTuner */,
 				D7A04F48298F491D00333098 /* Products */,
+				11C208E3A333E6FB3E96EC86 /* Pods */,
+				7326D1E820F934C8713656C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7A04F5B298F491F00333098 /* Build configuration list for PBXNativeTarget "GuitarTuner" */;
 			buildPhases = (
+				39CBC922CC049DBA88B142E4 /* [CP] Check Pods Manifest.lock */,
 				D7A04F43298F491D00333098 /* Sources */,
 				D7A04F44298F491D00333098 /* Frameworks */,
 				D7A04F45298F491D00333098 /* Resources */,
+				60C94190CF661A36BB3B52AC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +130,7 @@
 				};
 			};
 			buildConfigurationList = D7A04F42298F491D00333098 /* Build configuration list for PBXProject "GuitarTuner" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39CBC922CC049DBA88B142E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GuitarTuner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60C94190CF661A36BB3B52AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuitarTuner/Pods-GuitarTuner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GuitarTuner/Pods-GuitarTuner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GuitarTuner/Pods-GuitarTuner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7A04F43298F491D00333098 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		D7A04F5C298F491F00333098 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 490DD26F5470D470F7D34DFD /* Pods-GuitarTuner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		D7A04F5D298F491F00333098 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CD840BCE8E1AB318DB870CF /* Pods-GuitarTuner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
